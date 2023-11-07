@@ -1,6 +1,6 @@
-# Golf League Scores and Messages
+# Golf League Scores
 
-This JSON structure represents the weekly scores and messages for our golf league:
+This JSON structure represents the weekly scores for our golf league:
 
 ```json
 {
