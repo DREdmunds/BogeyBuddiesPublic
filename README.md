@@ -26,7 +26,6 @@ This JSON structure represents the weekly scores and messages for our golf leagu
         }
       ]
     }
-    // ... additional players
   ],
   "messages": [
     {
@@ -35,6 +34,5 @@ This JSON structure represents the weekly scores and messages for our golf leagu
       "content": "Great game today!",
       "timestamp": "2023-07-01T18:30:00Z"
     }
-    // ... additional messages
   ]
 }
