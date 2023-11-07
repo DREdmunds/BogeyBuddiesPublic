@@ -4,37 +4,12 @@ This JSON structure represents the weekly scores and messages for our golf leagu
 
 ```json
 {
-  "id": "week-1",
+  "id": "123e4567-e89b-12d3-a456-426614174000",
   "type": "weekly-scores",
   "weekIdentifier": "Week 1",
-  "date": "2023-11-09",
-  "scores": [
-    {
-      "playerId": "Derek",
-      "grossScore": 82,
-      "handicap": 9,
-      "netScore": 73,
-      "weeklyWinnings": 30,
-      "skinsWon": [
-        {
-          "hole": 5,
-          "amount": 20
-        },
-        {
-          "hole": 16,
-          "amount": 20
-        }
-      ]
-    }
-    // ... additional players
-  ],
-  "messages": [
-    {
-      "messageId": "message1",
-      "author": "Player1",
-      "content": "Great game today!",
-      "timestamp": "2023-07-01T18:30:00Z"
-    }
-    // ... additional messages
-  ]
+  "date": "2023-07-01",
+  "grossScore": 82,
+  "handicap": 10,
+  "netScore": 72,
+  "weeklyWinnings": 30,
 }
