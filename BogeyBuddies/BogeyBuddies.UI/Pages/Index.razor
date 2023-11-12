@@ -1,0 +1,27 @@
+﻿@page "/"
+@using BogeyBuddies.Models.Scores;
+@using Newtonsoft.Json;
+@inject HttpClient Http
+
+<h1>Weekly Scores</h1>
+
+@if (_weeklyScores == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    @foreach (var score in _weeklyScores)
+    {
+        <p>@score.WeekIdentifier - @score.NetScore</p>
+    }
+}
+
+@code {
+    private IReadOnlyList<WeeklyScoreResponse> _weeklyScores = Array.Empty<WeeklyScoreResponse>();
+
+    protected override async Task OnInitializedAsync()
+    {
+        _weeklyScores = await Http.GetFromJsonAsync<IReadOnlyList<WeeklyScoreResponse>>("http://localhost:7000/api/scores");
+    }
+}
