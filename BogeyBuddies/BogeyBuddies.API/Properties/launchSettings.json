@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "BogeyBuddies.API": {
+      "commandName": "Project",
+      "commandLineArgs": "--port 7000",
+      "launchBrowser": false
+    }
+  }
+}
