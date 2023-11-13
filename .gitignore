@@ -362,3 +362,4 @@ MigrationBackup/
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
 /BogeyBuddies/BogeyBuddies.API/local.settings.json
+/BogeyBuddies/BogeyBuddies.API/local.appsettings.json
