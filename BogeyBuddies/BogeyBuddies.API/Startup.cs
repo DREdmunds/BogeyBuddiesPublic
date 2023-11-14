@@ -14,8 +14,6 @@ namespace BogeyBuddies.API
     {
         public override void Configure(IFunctionsHostBuilder builder)
         {
-            this.LogInfo();
-
             builder.Services.AddLogging(loggingBuilder =>
             {
                 loggingBuilder.AddFilter(level => true);
@@ -39,11 +37,6 @@ namespace BogeyBuddies.API
             {
                 ContractResolver = new CamelCasePropertyNamesContractResolver()
             };
-        }
-
-        private void LogInfo()
-        {
-            Console.WriteLine("hi");
         }
     }
 }
